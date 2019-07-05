@@ -1,0 +1,64 @@
+body{
+	background-color: #d8d5ce;
+}
+
+h1{
+	color: white;
+	background-color: gray;
+	padding : 10px;
+	font-weight: bold;
+}
+
+.hoofdstad:hover{
+	background-color: brown;
+	
+}
+.hoofdstad{
+	cursor: pointer;
+}
+
+#countryList{
+	background-color: gray;
+	padding: 10px;
+	width: 100%;
+}
+
+#CODE {
+	position: absolute;
+    left: 100px;
+}
+
+#HOOFDSTAD{
+	position: absolute;
+    left: 100px;
+}
+
+#LAND{
+	position: absolute;
+    left: 100px;
+}
+
+#REGION{
+	position: absolute;
+    left: 100px;
+}
+
+#OPPERVLAKTE{
+	position: absolute;
+    left: 100px;
+}
+
+#INWONERS{
+	position: absolute;
+    left: 100px;
+}
+
+#OVERHEID{
+	position: absolute;
+    left: 100px;
+}
+
+#CONTINENT{
+	position: absolute;
+    left: 100px;
+}

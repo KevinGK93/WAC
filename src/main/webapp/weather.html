@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/weather.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Weer Gouda</title>
+</head>
+
+<body>
+	<div id="frame">
+		<div id="Logindiv">
+		</div>
+		<div id="myLocation">
+		<h1>Mijn Locatie:</h1>
+			<table id="locatie">
+				<tr>
+					<th></th>
+				</tr>
+				<tr>
+					<td>
+						<p>Landcode:</p>
+						<p>Land:</p>
+						<p>Regio:</p>
+						<p>Stad:</p>
+						<p>Postcode:</p>
+						<p>Latitude:</p>
+						<p>Longitude:</p>
+						<p>ip:</p>
+					</td>
+					<td id="datalocatie">
+						<p id="landcode"></p>
+						<p id="land"></p>
+						<p id="regio"></p>
+						<p id="stad"></p>
+						<p id="postcode"></p>
+						<p id="latitude"></p>
+						<p id="longitude"></p>
+						<p id="ip"></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		
+		<div id="weatherInfo">
+		<table id="weer">
+		<h1 id="h2" Het weer in:></h1>
+			<tr>
+				<td>
+					<p>Temperatuur:</p>
+					<p>Luchtvochtigheid:</p>
+					<p>Windsnelheid:</p>
+					<p>Windrichting:</p>
+					<p>Zonsopgang:</p>
+					<p>Zonsondergang:</p>
+				</td>
+				<td>
+					<p id="temperatuur"></p>
+					<p id="luchtvochtigheid"></p>
+					<p id="windsnelheid"></p>
+					<p id="windrichting"></p>
+					<p id="zonsopgang"></p>
+					<p id="zonsondergang"></p>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div id="newCountry">
+		<table id="form">
+		<h1 id=h3>Voer de informatie van een nieuw land in:</h1>
+		<div id="invoerveld">
+			<form id="toevoegform">
+				Code:<input type="text" id="CODE" name="CODE"><br>
+				Land:<input type="text" id="LAND" name="LAND"><br>
+				Hoofdstad:<input type="text" id="HOOFDSTAD" name="HOOFDSTAD"><br>
+				Regio:<input type="text" id="REGION" name="REGION"><br>
+				Oppvervlakte:<input type="text" id="OPPERVLAKTE" name="OPPERVLAKTE"><br>
+				Inwoners:<input type="text" id="INWONERS" name="INWONERS"><br>
+				Overheid:<input type="text" id="OVERHEID" name="OVERHEID"><br>
+				Continent:<input type="text" id="CONTINENT" name="CONTINENT"><br>
+				<button type="button" id= "toevoegen">Toevoegen</button>
+				</form>
+			</div>
+		</table>
+		</div>
+		
+	<script src="js/weather.js"></script>
+</body>
+</html>
