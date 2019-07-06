@@ -35,7 +35,7 @@ function weatherInfo(city){
 	        
 	    	var weerdata = JSON.parse(window.localStorage.getItem(city));
 
-	        console.log("Informatie uit de localStorage");
+	        console.log("IFNO VAN LOCALSTORAGE");
 	        var sunriseM = new Date((weerdata.sys.sunrise) * 1000);
 	        var sunsetM = new Date((weerdata.sys.sunset) * 1000);
 
@@ -84,7 +84,7 @@ function weatherInfo(city){
 	fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ef38c137d9054a70d85465b6c79eafbe")
 	        .then(response => response.json())
 	        .then(function(weerdata) {
-	        console.log("Informatie aan het verzamelen");
+	        console.log("INFO VERZAMELEN");
 
 	        weerdata["time"] = new Date().getTime() + 600000;
 	        console.log(weerdata["time"]);
