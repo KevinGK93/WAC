@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="css/weather.css">
-<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css" media=" only screen and (min-width: 700px)" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<title>Weer Gouda</title>
+<title>Weather</title>
 </head>
 
 <body>
+	<div id="frame">
+		<div id="Logindiv">
+		<h1 id="h1">login</h1>
+		<form id="loginform">
+			<b>Username:</b><input id="username" type="text" name="username"/>
+			<b>Password:</b><input id="password" type="password" name="password"/>
+			<input type="button" value="login" id="login"/> 
+		</form>
+		</div>
+		
 		<div id="myLocation">
 		<h1>Mijn Locatie:</h1>
 			<table id="locatie">
@@ -44,7 +54,11 @@
 		
 		<div id="weatherInfo">
 		<table id="weer">
-		<h1 id="h2" Het weer in:></h1>
+		<h1 id="h2">Het weer in:</h1>
+			<tr>
+				<th></th>
+			</tr>
+
 			<tr>
 				<td>
 					<p>Temperatuur:</p>
@@ -66,10 +80,10 @@
 		</table>
 		</div>
 		
-		<div id="newCountry">
-		<table id="form">
-		<h1 id=h3>Voer de informatie van een nieuw land in:</h1>
-		<div id="invoerveld">
+		<div id="invoerForm">
+		<table id="invoerveld">
+		<h1 id="h3">Voer hier de gegevens voor een nieuw land in:</h1>
+		<div id="invoervelden">
 			<form id="toevoegform">
 				Code:<input type="text" id="CODE" name="CODE"><br>
 				Land:<input type="text" id="LAND" name="LAND"><br>
@@ -85,6 +99,35 @@
 		</table>
 		</div>
 		
+		<div id="countrySummary">
+			<table id="countryList">
+			<h1>Beschikbare Vakantiebestemmingen:</h1>
+				<tr>
+				<form id="updateform">
+					<input readonly type= "text" id="code" name="code" />
+					<input type="text" id="Land" name="Land" />
+					<input type="text" id="hoofdstad" name = "hoofdstad"/>
+					<input type="text" id="region" name="region"/>
+				    <input type="text" id="oppervlakte" name="oppervlakte"/>
+					<input type="text" id="inwoners" name="inwoners"/>	
+					<button type="button" id="opslaan">Opslaan</button>
+				</form>
+				</tr>
+				
+				<tr>
+					<th>Code</th>
+					<th>Land</th>
+					<th>Hoofdstad</th>
+					<th>Regio</th>
+					<th>Oppervlakte</th>
+					<th>Inwoners</th>
+					<th>Update</th>
+					<th>Delete</th>
+				</tr>
+				</table>
+			</div>
+		</div>
+			
 	<script src="js/weather.js"></script>
 </body>
 </html>

@@ -14,19 +14,19 @@ public class DynamicServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String value1 = req.getParameter("value_one");
 		String value2 = req.getParameter("value_two");
-		String manier = req.getParameter("submit");
+		String method = req.getParameter("submit");
 
 		double valueOne = new Double(value1);
 		double valueTwo = new Double(value2);
 		double value = 0;
 
-		if (manier.equals("x")) {
+		if (method.equals("x")) {
 			value = valueOne * valueTwo;
-		} else if (manier.equals("/")) {
+		} else if (method.equals("/")) {
 			value = valueOne / valueTwo;
-		} else if (manier.equals("-")) {
+		} else if (method.equals("-")) {
 			value = valueOne - valueTwo;
-		} else if (manier.equals("+")) {
+		} else if (method.equals("+")) {
 			value = valueOne + valueTwo;
 		}
 
